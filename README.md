@@ -17,15 +17,15 @@
 
 ---
 
-# 🧰 BROSKIEX
+# 🧰 BROSKIX
 
 <div align="center">
 
-<!-- MAIN BRAND FONT (CAPSULE HEADER STYLE) -->
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:000000,50:00BFFF,100:000000&text=BROSKIEX&fontSize=72&fontColor=ffffff&fontAlignY=40"/>
+<!-- DARKER HEADER STYLE -->
+<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:000000,50:0A0A0A,100:000000&text=BROSKIX&fontSize=72&fontColor=ffffff&fontAlignY=40"/>
 
-<!-- REAL FONT STYLE CONTROL (THIS IS THE IMPORTANT PART) -->
-<img src="https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&size=24&pause=1000&color=00BFFF&center=true&vCenter=true&width=850&lines=BROSKIEX+TOOLS+PLATFORM;DARK+•+FAST+•+MODERN;BUILT+WITH+SIMPLE+UI+LOGIC;ALL+TOOLS+IN+ONE+PLACE"/>
+<!-- NEW FONT STYLE (TERMINAL / DARK CYBER) -->
+<img src="https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&size=24&pause=1100&color=FFFFFF&center=true&vCenter=true&width=850&lines=BROSKIX+TOOLS+WEB;DARK+•+MINIMAL+•+FAST;BUILT+FOR+PERSONAL+USE;NO+NOISE+JUST+TOOLS"/>
 
 </div>
 
@@ -33,27 +33,19 @@
 
 ## ⚡ ABOUT
 
-BROSKIEX is a dark web-based tool platform designed for speed, simplicity, and clean UI interaction.
+BROSKIX Tools Web is made for personal use and simple everyday utilities.
+
+It is a lightweight browser-based tool system designed for speed and convenience.
 
 ---
 
-## 🎨 FONT STYLE SYSTEM
+## ⚠️ NOTE
 
-- **Primary Font:** Share Tech Mono (terminal / cyber look)
-- **Brand Style:** Capsule Render bold header
-- **UI Feel:** Dark hacker-style minimal system
-- **Typing Effect:** Animated SVG font banner (main identity)
+This project is for personal use.
 
----
+Some tools may behave differently depending on how they are used.
 
-## 🎯 FEATURES
-
-- ⚡ Fast loading system (preloader)
-- 🔎 Live search filter
-- 🧰 Tool card dashboard UI
-- 📊 Animated counters
-- 🌑 Dark neon interface
-- 📱 Mobile responsive design
+Use at your own discretion.
 
 ---
 
