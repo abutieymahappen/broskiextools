@@ -1,44 +1,57 @@
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=320&color=0:000000,50:1E90FF,100:000000&text=BROSKIX&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=40"/>
+
+<br>
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Black+Ops+One&size=30&pause=1000&color=00BFFF&center=true&vCenter=true&width=900&lines=⚡+BROSKIX+TOOLS+SYSTEM+⚡;🧰+Fast+•+Clean+•+Simple;🌐+All+Tools+In+One+Place;🚀+Built+For+Speed+and+Power"/>
+
+<br><br>
+
+<img src="https://img.shields.io/badge/STATUS-ONLINE-success?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/VERSION-1.0-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/TYPE-WEB%20TOOLS-black?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/UI-DARK%20MODE-00bfff?style=for-the-badge"/>
+
+<br><br>
+
+</div>
+
+---
+
+<div align="center">
+
 # 🧰 BROSKIX
 
-**Tools • Speed • Simplicity**
+⚡ A Fast & Lightweight Web Tool Hub  
+🧠 Built for simplicity, speed, and daily use  
+🌐 All essential tools in one clean dashboard  
 
-BROSKIX is a modern, lightweight web-based tool hub that provides multiple useful utilities in one clean dashboard.  
-It is designed to be fast, minimal, and easy to expand with new tools.
-
----
-
-## 🚀 Live Demo
-> (Add your GitHub Pages / Netlify link here)
-
-Example:
-https://your-username.github.io/broskix/
+</div>
 
 ---
 
-## ✨ Features
+## 🌑 ABOUT BROSKIX
 
-- 🖼️ Image Tool (Base64 converter + download + image → website generator)
-- 🧠 Word Counter (words, characters, sentences)
+BROSKIX is a modern web-based tool system designed to provide quick access to useful utilities like image tools, text tools, generators, and more.
+
+Built with a focus on:
+- Speed ⚡  
+- Clean UI 🧼  
+- Easy access 🧰  
+- Expandability 🚀  
+
+---
+
+## ⚙️ SYSTEM FEATURES
+
+- 🖼️ Image Tool (Base64 / Download / Website Generator)
+- 🧠 Word Counter
 - 📱 Fancy Text Generator
 - 📲 QR Code Generator
-- ⚡ Fast and lightweight performance
-- 🌙 Dark modern UI design
-- 📱 Fully mobile responsive
-- 🧩 Easy to add new tools
+- ⚡ Lightweight performance
+- 🌙 Dark modern interface
 
 ---
 
-## 🎨 UI Style
-
-BROSKIX uses a clean modern design system:
-
-- Dark theme background
-- Neon blue accent (`#00bfff`)
-- Card-based tool layout
-- Smooth hover animations
-- Minimal SaaS-style interface
-- Loading intro screen (brand splash)
-
----
-
-## 📁 Project Structure
+## 🧩 STRUCTURE
