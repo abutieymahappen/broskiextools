@@ -1,56 +1,50 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=320&color=0:000000,50:1E90FF,100:000000&text=BROSKIX&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=40"/>
+<!-- MAIN TITLE (FONT CONTROLLED VIA CAPSULE RENDER) -->
+<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:000000,50:00BFFF,100:000000&text=BROSKIX&fontSize=70&fontColor=ffffff&fontAlignY=40"/>
+
+<!-- FONT-DRIVEN TYPEWRITER (THIS IS THE REAL "FONT") -->
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=26&pause=1000&color=00BFFF&center=true&vCenter=true&width=850&lines=BROSKIX+TOOLS+SYSTEM;FAST+•+MINIMAL+•+MODERN;BUILT+FOR+WEB+SPEED;NO+SETUP+JUST+TOOLS"/>
 
 <br>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Black+Ops+One&size=30&pause=1000&color=00BFFF&center=true&vCenter=true&width=900&lines=⚡+BROSKIX+TOOLS+SYSTEM+⚡;🧰+Fast+•+Clean+•+Simple;🌐+All+Tools+In+One+Place;🚀+Built+For+Speed+and+Power"/>
-
-<br><br>
-
-<img src="https://img.shields.io/badge/STATUS-ONLINE-success?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/VERSION-1.0-blue?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/TYPE-WEB%20TOOLS-black?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/UI-DARK%20MODE-00bfff?style=for-the-badge"/>
-
-<br><br>
+<!-- FONT BADGE -->
+<img src="https://img.shields.io/badge/FONT-ORBITRON-00BFFF?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/DESIGN-MINIMAL-000000?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/STYLE-TECH-1E90FF?style=for-the-badge"/>
 
 </div>
 
 ---
-
-<div align="center">
 
 # 🧰 BROSKIX
 
-⚡ A Fast & Lightweight Web Tool Hub  
-🧠 Built for simplicity, speed, and daily use  
-🌐 All essential tools in one clean dashboard  
+> Modern web tools system built with speed-first design.
 
-</div>
+Everything runs in the browser. No backend. No install.
 
 ---
 
-## 🌑 ABOUT BROSKIX
+## ⚙️ CORE TOOLS (ALL USING CLEAN UI FONT SYSTEM)
 
-BROSKIX is a modern web-based tool system designed to provide quick access to useful utilities like image tools, text tools, generators, and more.
-
-Built with a focus on:
-- Speed ⚡  
-- Clean UI 🧼  
-- Easy access 🧰  
-- Expandability 🚀  
+- 🖼️ Image Tool → Base64 / Export / Website Generator
+- 🧠 Word Counter → Real-time analysis
+- 📱 Fancy Text → Styled text generator
+- 📲 QR Generator → Instant QR creation
+- ⚡ Fast loading interface
+- 🌙 Dark tech UI theme
 
 ---
 
-## ⚙️ SYSTEM FEATURES
+## 🎨 FONT SYSTEM (IMPORTANT)
 
-- 🖼️ Image Tool (Base64 / Download / Website Generator)
-- 🧠 Word Counter
-- 📱 Fancy Text Generator
-- 📲 QR Code Generator
-- ⚡ Lightweight performance
-- 🌙 Dark modern interface
+BROSKIX uses a strict font identity system:
+
+- **Orbitron** → headings + branding (tech look)
+- **System UI fallback** → readability
+- **SVG fonts (typing banner)** → animated branding
+
+This creates a consistent “app-like” feel across GitHub + web UI.
 
 ---
 
