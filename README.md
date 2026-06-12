@@ -31,22 +31,22 @@
 
 ---
 
-## ⚡ ABOUT
+## ⚡ **ABOUT**
 
-BROSKIX Tools Web is made for personal use and simple everyday utilities.
+**BROSKIX Tools Web is made for personal use and simple everyday utilities.**
 
-It is a lightweight browser-based tool system designed for speed and convenience.
-
----
-
-## ⚠️ NOTE
-
-This project is for personal use.
-
-Some tools may behave differently depending on how they are used.
-
-Use at your own discretion.
+**It is a lightweight browser-based tool system designed for speed and convenience.**
 
 ---
 
-## 🧩 STRUCTURE
+## ⚠️ **NOTE**
+
+**This project is for personal use.**
+
+**Some tools may behave differently depending on how they are used.**
+
+**Use at your own discretion.**
+
+---
+
+## 🧩 **STRUCTURE**
