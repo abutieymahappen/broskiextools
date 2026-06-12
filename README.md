@@ -15,22 +15,6 @@
 
 </div>
 
----
-
-# 🧰 BROSKIX
-
-<div align="center">
-
-<!-- DARKER HEADER STYLE -->
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:000000,50:0A0A0A,100:000000&text=BROSKIX&fontSize=72&fontColor=ffffff&fontAlignY=40"/>
-
-<!-- NEW FONT STYLE (TERMINAL / DARK CYBER) -->
-<img src="https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&size=24&pause=1100&color=FFFFFF&center=true&vCenter=true&width=850&lines=BROSKIX+TOOLS+WEB;DARK+•+MINIMAL+•+FAST;BUILT+FOR+PERSONAL+USE;NO+NOISE+JUST+TOOLS"/>
-
-</div>
-
----
-
 ## ⚡ **ABOUT**
 
 **BROSKIX Tools Web is made for personal use and simple everyday utilities.**
