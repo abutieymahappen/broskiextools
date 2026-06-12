@@ -1,0 +1,368 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BROSKIEX</title><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet"><style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Orbitron',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#050505;
+color:#fff;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+top:-300px;
+left:50%;
+transform:translateX(-50%);
+width:900px;
+height:900px;
+background:#00bfff;
+filter:blur(250px);
+opacity:.08;
+pointer-events:none;
+}
+
+#loader{
+position:fixed;
+inset:0;
+background:#050505;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:99999;
+}
+
+#loader h1{
+font-size:3rem;
+color:#00bfff;
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{
+text-shadow:0 0 20px #00bfff;
+}
+to{
+text-shadow:0 0 40px #00bfff,0 0 80px #00bfff;
+}
+}
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.4);
+backdrop-filter:blur(15px);
+z-index:1000;
+}
+
+.logo-nav{
+font-weight:900;
+color:#00bfff;
+}
+
+.nav-links{
+display:flex;
+gap:20px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:120px 20px 20px;
+}
+
+.logo{
+font-size:clamp(3rem,10vw,7rem);
+font-weight:900;
+color:#00bfff;
+animation:glow 2s infinite alternate;
+}
+
+.subtitle{
+margin-top:15px;
+color:#bbb;
+letter-spacing:2px;
+}
+
+.search-box{
+width:min(700px,95%);
+margin-top:40px;
+padding:25px;
+border-radius:20px;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,.08);
+}
+
+.search-box input{
+width:100%;
+padding:18px;
+border:none;
+outline:none;
+border-radius:12px;
+background:#111;
+color:white;
+}
+
+.search-box button{
+width:100%;
+margin-top:12px;
+padding:18px;
+border:none;
+border-radius:12px;
+background:#00bfff;
+color:white;
+cursor:pointer;
+font-weight:bold;
+}
+
+.section{
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
+}
+
+.title{
+text-align:center;
+color:#00bfff;
+margin-bottom:35px;
+font-size:2rem;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.08);
+padding:25px;
+border-radius:16px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#00bfff;
+}
+
+.card h3{
+color:#00bfff;
+margin-bottom:10px;
+}
+
+.card p{
+color:#bbb;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
+
+.stat{
+background:rgba(255,255,255,.05);
+padding:25px;
+border-radius:16px;
+text-align:center;
+}
+
+.stat h1{
+font-size:2.4rem;
+color:#00bfff;
+}
+
+.creator{
+background:rgba(255,255,255,.05);
+padding:40px;
+border-radius:20px;
+text-align:center;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:14px 24px;
+background:#00bfff;
+color:white;
+text-decoration:none;
+border-radius:12px;
+}
+
+footer{
+padding:40px;
+text-align:center;
+color:#888;
+border-top:1px solid rgba(255,255,255,.08);
+}
+
+@media(max-width:700px){
+nav{
+padding:15px;
+}
+
+.nav-links{
+gap:10px;
+font-size:12px;
+}
+
+.logo{
+font-size:3rem;
+}
+}
+</style></head>
+<body><div id="loader">
+<h1>BROSKIEX</h1>
+<p>Loading...</p>
+</div><nav>
+<div class="logo-nav">BROSKIEX</div><div class="nav-links">
+<a href="#tools">Tools</a>
+<a href="#stats">Stats</a>
+<a href="#creator">Creator</a>
+</div>
+
+</nav><section class="hero"><h1 class="logo">BROSKIEX</h1><p class="subtitle">
+ •DEVELOPED SPECIAL FOR YOU• 
+</p><div class="search-box"><input
+id="search"
+type="text"
+placeholder="Search tools..."
+onkeyup="searchTools()"
+
+«»
+
+<h2 class="title">FIND DIFFERENT TOOLS</h2>
+
+  </a></div></section><section class="section"><h2 class="title"> TOOLS</h2><div class="grid"><div class="card">
+<h3>HACKING TOOLS</h3>
+<p>Everything in one place.</p>
+</div><div class="card">
+<h3>FREE TV SHOW NO PREMIUM</h3>
+<p>Optimized performance.</p>
+</div><div class="card">
+<h3>WHATSAPP BAN & UNBAN</h3>
+<p>Works on all devices/WhatsApp.</p>
+</div><div class="card">
+<h3>TERMUX HACKING COMMANDS</h3>
+<p>Use at ur own risk.</p>
+</div></div></section><section class="section" id="stats"><h2 class="title">💹BROSKIEX STATS</h2><div class="stats"><div class="stat">
+<h1 class="counter" data-target="14">0</h1>
+<p>Tools</p>
+</div><div class="stat">
+<h1>24/7</h1>
+<p>Online</p>
+</div><div class="stat">
+<h1 class="counter" data-target="109">0</h1>
+<p>Users</p>
+</div><div class="stat">
+<h1>100%</h1>
+<p>Free</p>
+</div></div></section><section class="section" id="creator"><div class="creator"><h2 style="color:#00bfff;">👑 CREATOR</h2><h3 style="margin-top:10px;">ABUTIEY MAHAPPEN X MRDIEHARD</h3><p style="margin-top:10px;color:#bbb;">
+We are building tools for everyone.
+</p><a href="#" class="btn">
+EXPLORE TOOLS
+</a></div></section><footer>
+BROSKIEX TOOLS © 2026
+<br><br>
+DEVELOPING TOOLS FOR Y'ALL
+</footer><script>
+
+window.onload=()=>{
+setTimeout(()=>{
+document.getElementById("loader").style.display="none";
+},1500);
+}
+
+function searchTools(){
+
+const value=
+document.getElementById("search")
+.value
+.toLowerCase();
+
+const cards=
+document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+
+const text=
+card.innerText.toLowerCase();
+
+card.style.display=
+text.includes(value)
+? "block"
+: "none";
+
+});
+
+}
+
+const counters=
+document.querySelectorAll(".counter");
+
+counters.forEach(counter=>{
+
+const update=()=>{
+
+const target=
++counter.dataset.target;
+
+const current=
++counter.innerText;
+
+const increment=
+target/100;
+
+if(current<target){
+
+counter.innerText=
+Math.ceil(current+increment);
+
+setTimeout(update,20);
+
+}else{
+
+counter.innerText=
+target+"+";
+
+}
+
+}
+
+update();
+
+});
+
+</script></body>
+  </html>
