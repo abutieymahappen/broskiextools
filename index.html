@@ -10,28 +10,10 @@ box-sizing:border-box;
 font-family:'Orbitron',sans-serif;
 }
 
-html{
-scroll-behavior:smooth;
-}
-
 body{
 background:#050505;
 color:#fff;
-overflow-x:hidden;
-}
-
-body::before{
-content:"";
-position:fixed;
-top:-300px;
-left:50%;
-transform:translateX(-50%);
-width:900px;
-height:900px;
-background:#00bfff;
-filter:blur(250px);
-opacity:.08;
-pointer-events:none;
+padding:20px;
 }
 
 #loader{
@@ -39,330 +21,335 @@ position:fixed;
 inset:0;
 background:#050505;
 display:flex;
-flex-direction:column;
 justify-content:center;
 align-items:center;
-z-index:99999;
-}
-
-#loader h1{
-font-size:3rem;
+font-size:2rem;
+font-weight:800;
 color:#00bfff;
-animation:glow 2s infinite alternate;
+z-index:9999;
 }
 
-@keyframes glow{
-from{
-text-shadow:0 0 20px #00bfff;
-}
-to{
-text-shadow:0 0 40px #00bfff,0 0 80px #00bfff;
-}
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:25px;
 }
 
-nav{
+.logo{
+font-size:1.4rem;
+font-weight:800;
+color:#00bfff;
+}
+
+.search{
+margin-bottom:25px;
+}
+
+.search input{
+width:100%;
+padding:15px;
+border:none;
+outline:none;
+border-radius:14px;
+background:#111;
+color:white;
+font-size:15px;
+}
+
+.section-title{
+color:#00bfff;
+margin:20px 0 15px;
+font-size:1rem;
+}
+
+.tool-card{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#101010;
+padding:18px;
+border-radius:16px;
+margin-bottom:12px;
+border:1px solid #1b1b1b;
+transition:.3s;
+}
+
+.tool-card:hover{
+border-color:#00bfff;
+}
+
+.tool-left h3{
+font-size:15px;
+margin-bottom:5px;
+}
+
+.tool-left p{
+font-size:12px;
+color:#888;
+}
+
+.arrow{
+font-size:24px;
+color:#00bfff;
+}
+
+.banner{
+background:linear-gradient(135deg,#00bfff20,#111);
+padding:20px;
+border-radius:18px;
+margin-bottom:25px;
+border:1px solid #00bfff30;
+}
+
+.banner h2{
+color:#00bfff;
+margin-bottom:8px;
+}
+
+.banner p{
+color:#bbb;
+font-size:13px;
+}
+
+.bottom{
+margin-top:30px;
+text-align:center;
+color:#666;
+font-size:12px;
+}
+.menu-btn{
+font-size:28px;
+color:#00bfff;
+cursor:pointer;
+}
+
+.sidebar{
+position:fixed;
+top:0;
+left:-260px;
+width:250px;
+height:100%;
+background:#0d0d0d;
+padding-top:70px;
+transition:.3s;
+z-index:999;
+border-right:1px solid #222;
+}
+
+.sidebar.active{
+left:0;
+}
+
+.sidebar a{
+display:block;
+padding:18px 25px;
+color:white;
+text-decoration:none;
+border-bottom:1px solid #1a1a1a;
+}
+
+.sidebar a:hover{
+background:#111;
+color:#00bfff;
+}
+.overlay{
 position:fixed;
 top:0;
 left:0;
 width:100%;
-padding:20px 40px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(0,0,0,.4);
-backdrop-filter:blur(15px);
-z-index:1000;
+height:100%;
+background:rgba(0,0,0,.5);
+display:none;
+z-index:998;
 }
 
-.logo-nav{
-font-weight:900;
-color:#00bfff;
-}
+.overlay.active{
+display:block;
+}</style></head>
+<body>
 
-.nav-links{
-display:flex;
-gap:20px;
-}
+<div id="loader">BROSKIEX</div>
 
-.nav-links a{
-color:white;
-text-decoration:none;
-}
+<div class="sidebar" id="sidebar">
 
-.hero{
-min-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:120px 20px 20px;
-}
+<a href="#" onclick="toggleMenu()">✖ Close</a>
 
-.logo{
-font-size:clamp(3rem,10vw,7rem);
-font-weight:900;
-color:#00bfff;
-animation:glow 2s infinite alternate;
-}
+<a href="#" onclick="showPage('settings-page')">⚙️ Settings</a>
 
-.subtitle{
-margin-top:15px;
-color:#bbb;
-letter-spacing:2px;
-}
+<a href="#" onclick="showPage('about-page')">ℹ️ About</a>
 
-.search-box{
-width:min(700px,95%);
-margin-top:40px;
-padding:25px;
-border-radius:20px;
-background:rgba(255,255,255,.05);
-backdrop-filter:blur(15px);
-border:1px solid rgba(255,255,255,.08);
-}
+<a href="#" onclick="showPage('developer-page')">👨‍💻 Developer</a>
 
-.search-box input{
-width:100%;
-padding:18px;
-border:none;
-outline:none;
-border-radius:12px;
-background:#111;
-color:white;
-}
+<a href="#" onclick="showPage('help-page')">❓ Help</a>
 
-.search-box button{
-width:100%;
-margin-top:12px;
-padding:18px;
-border:none;
-border-radius:12px;
-background:#00bfff;
-color:white;
-cursor:pointer;
-font-weight:bold;
-}
+<a href="#" onclick="showPage('contact-page')">📞 Contact Us</a>
 
-.section{
-max-width:1200px;
-margin:auto;
-padding:80px 20px;
-}
-
-.title{
-text-align:center;
-color:#00bfff;
-margin-bottom:35px;
-font-size:2rem;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:rgba(255,255,255,.05);
-border:1px solid rgba(255,255,255,.08);
-padding:25px;
-border-radius:16px;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-border-color:#00bfff;
-}
-
-.card h3{
-color:#00bfff;
-margin-bottom:10px;
-}
-
-.card p{
-color:#bbb;
-}
-
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:20px;
-}
-
-.stat{
-background:rgba(255,255,255,.05);
-padding:25px;
-border-radius:16px;
-text-align:center;
-}
-
-.stat h1{
-font-size:2.4rem;
-color:#00bfff;
-}
-
-.creator{
-background:rgba(255,255,255,.05);
-padding:40px;
-border-radius:20px;
-text-align:center;
-}
-
-.btn{
-display:inline-block;
-margin-top:20px;
-padding:14px 24px;
-background:#00bfff;
-color:white;
-text-decoration:none;
-border-radius:12px;
-}
-
-footer{
-padding:40px;
-text-align:center;
-color:#888;
-border-top:1px solid rgba(255,255,255,.08);
-}
-
-@media(max-width:700px){
-nav{
-padding:15px;
-}
-
-.nav-links{
-gap:10px;
-font-size:12px;
-}
-
-.logo{
-font-size:3rem;
-}
-}
-</style></head>
-<body><div id="loader">
-<h1>BROSKIEX</h1>
-<p>Loading...</p>
-</div><nav>
-<div class="logo-nav">BROSKIEX</div><div class="nav-links">
-<a href="#tools">Tools</a>
-<a href="#stats">Stats</a>
-<a href="#creator">Creator</a>
+<a href="#" onclick="showPage('announcements-page')">🔔 Announcements</a>
 </div>
 
-</nav><section class="hero"><h1 class="logo">BROSKIEX</h1><p class="subtitle">
- •DEVELOPED SPECIAL FOR YOU• 
-</p><div class="search-box"><input
-id="search"
-type="text"
-placeholder="Search tools..."
-onkeyup="searchTools()"
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+<div id="home-page">
+<div class="header">
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+<div class="logo">BROSKIEX</div>
+</div>
 
-«»
+<div class="search">
+<input type="text" id="search" placeholder="Search tools..." onkeyup="searchTools()">
+</div><div class="banner">
+<h2>Welcome</h2>
+<p>All your tools in one place.</p>
+</div><h2 class="section-title">📱 TOOLS</h2><div class="tool-card">
+<div class="tool-left">
+<h3>📺 TV Shows</h3>
+<p>DOWNLOAD APK</p>
+</div>
+<div class="arrow">›</div>
+</div><div class="tool-card">
+<div class="tool-left">
+<h3>🖼️ Image Tools</h3>
+<p>IMAGE GENERATORS</p>
+</div>
+<div class="arrow">›</div>
+</div><div class="tool-card">
+<div class="tool-left">
+<h3>📱 WhatsApp Tools</h3>
+<p> WHATSAPP BAN & UNBAN</p>
+</div>
+<div class="arrow">›</div>
+</div><div class="tool-card">
+<div class="tool-left">
+<h3>💻 Termux Tools & Commands</h3>
+<p>USE AT YOUR OWN RISK!</p>
+</div>
+<div class="arrow">›</div>
+</div><div class="tool-card">
+<div class="tool-left">
+<h3>⚙️ coming soon!</h3>
+<p>MORE TOOLS COMING</p>
+</div>
+<div class="arrow">›</div>
+</div><div class="bottom">
+BROSKIEX © 2026
+</div></div>
+<div id="settings-page" style="display:none;">
+<h2 class="section-title">⚙️ Settings</h2>
 
-<h2 class="title">FIND DIFFERENT TOOLS</h2>
+<div class="tool-card">
+<div class="tool-left">
+<h3>🌙 Appearance</h3>
+<p>Theme settings</p>
+</div>
+</div>
 
-  </a></div></section><section class="section"><h2 class="title"> TOOLS</h2><div class="grid"><div class="card">
-<h3>HACKING TOOLS</h3>
-<p>Everything in one place.</p>
-</div><div class="card">
-<h3>FREE TV SHOW NO PREMIUM</h3>
-<p>Optimized performance.</p>
-</div><div class="card">
-<h3>WHATSAPP BAN & UNBAN</h3>
-<p>Works on all devices/WhatsApp.</p>
-</div><div class="card">
-<h3>TERMUX HACKING COMMANDS</h3>
-<p>Use at ur own risk.</p>
-</div></div></section><section class="section" id="stats"><h2 class="title">💹BROSKIEX STATS</h2><div class="stats"><div class="stat">
-<h1 class="counter" data-target="14">0</h1>
-<p>Tools</p>
-</div><div class="stat">
-<h1>24/7</h1>
-<p>Online</p>
-</div><div class="stat">
-<h1 class="counter" data-target="109">0</h1>
-<p>Users</p>
-</div><div class="stat">
-<h1>100%</h1>
-<p>Free</p>
-</div></div></section><section class="section" id="creator"><div class="creator"><h2 style="color:#00bfff;">👑 CREATOR</h2><h3 style="margin-top:10px;">ABUTIEY MAHAPPEN X MRDIEHARD</h3><p style="margin-top:10px;color:#bbb;">
-We are building tools for everyone.
-</p><a href="#" class="btn">
-EXPLORE TOOLS
-</a></div></section><footer>
-BROSKIEX TOOLS © 2026
-<br><br>
-DEVELOPING TOOLS FOR Y'ALL
-</footer><script>
+<button onclick="showPage('home-page')">← Back</button>
+</div>
+
+<div id="about-page" style="display:none;">
+<h2 class="section-title">ℹ️ About</h2>
+
+<div class="banner">
+<h2>BROSKIEX</h2>
+<p>GET ALL TOOLS U WANT.</p>
+</div>
+
+<button onclick="showPage('home-page')">← Back</button>
+</div>
+
+<div id="developer-page" style="display:none;">
+<h2 class="section-title">👨‍💻 Developers</h2>
+
+<div class="banner">
+<h2>ABUTIEY MAHAPPEN</h2>
+<p>Founder of BROSKIEX</p>
+</div>
+<div class="banner">
+<h2>MRDIEHARD</h2>
+<p>CO FOUNDER BROSKIEX</p>
+</div>
+
+<button onclick="showPage('home-page')">← Back</button>
+</div>
+
+<div id="help-page" style="display:none;">
+<h2 class="section-title">❓ Help</h2>
+
+<div class="banner">
+<p>Need assistance? Contact support.</p>
+</div>
+
+<button onclick="showPage('home-page')">← Back</button>
+</div>
+
+<div id="contact-page" style="display:none;">
+<h2 class="section-title">📞 Contact</h2>
+
+<div class="banner">
+<p>Contact the BROSKIEX team.</p>
+</div>
+
+<button onclick="showPage('home-page')">← Back</button>
+</div>
+
+<div id="announcements-page" style="display:none;">
+<h2 class="section-title">🔔 Announcements</h2>
+
+<div class="banner">
+<p>Latest BROSKIEX updates.</p>
+</div>
+
+<button onclick="showPage('home-page')">← Back</button>
+</div>
+<script>
 
 window.onload=()=>{
 setTimeout(()=>{
 document.getElementById("loader").style.display="none";
-},1500);
-}
+},1200);
+};
 
 function searchTools(){
-
-const value=
-document.getElementById("search")
-.value
-.toLowerCase();
-
-const cards=
-document.querySelectorAll(".card");
+const value=document.getElementById("search").value.toLowerCase();
+const cards=document.querySelectorAll(".tool-card");
 
 cards.forEach(card=>{
+const text=card.innerText.toLowerCase();
+card.style.display=text.includes(value)?"flex":"none";
+});
+}
+function toggleMenu(){
 
-const text=
-card.innerText.toLowerCase();
+document
+.getElementById("sidebar")
+.classList
+.toggle("active");
 
-card.style.display=
-text.includes(value)
-? "block"
-: "none";
+document
+.getElementById("overlay")
+.classList
+.toggle("active");
 
+}
+function showPage(pageId){
+
+const pages=[
+"home-page",
+"settings-page",
+"about-page",
+"developer-page",
+"help-page",
+"contact-page",
+"announcements-page"
+];
+
+pages.forEach(id=>{
+document.getElementById(id).style.display="none";
 });
 
+document.getElementById(pageId).style.display="block";
+
+toggleMenu();
 }
-
-const counters=
-document.querySelectorAll(".counter");
-
-counters.forEach(counter=>{
-
-const update=()=>{
-
-const target=
-+counter.dataset.target;
-
-const current=
-+counter.innerText;
-
-const increment=
-target/100;
-
-if(current<target){
-
-counter.innerText=
-Math.ceil(current+increment);
-
-setTimeout(update,20);
-
-}else{
-
-counter.innerText=
-target+"+";
-
-}
-
-}
-
-update();
-
-});
-
 </script></body>
-  </html>
+                                                     </html>
