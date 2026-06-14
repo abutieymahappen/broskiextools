@@ -358,5 +358,33 @@ document.getElementById(pageId).style.display="block";
 
 toggleMenu();
 }
+  async function checkForAnnouncement() {
+  try {
+    const response = await fetch('broskiextools.netlify.app/announcement.json');
+    if (!response.ok) throw new Error('No update found');
+
+    const data = await response.json();
+    showPopup(data.title, data.message);
+  } catch (error) {
+    console.log('No announcement or error:', error);
+  }
+}
+
+// Call once when page loads
+window.onload = () => {
+  checkForAnnouncement();
+  // Check every 5 minutes
+  setInterval(checkForAnnouncement, 300000); 
+};
+
+function showPopup(title, message) {
+  document.getElementById('popup-title').innerText = title;
+  document.getElementById('popup-message').innerText = message;
+  document.getElementById('popup').style.display = 'flex';
+}
+
+function closePopup() {
+  document.getElementById('popup').style.display = 'none';
+  }
 </script></body>
                                                      </html>
